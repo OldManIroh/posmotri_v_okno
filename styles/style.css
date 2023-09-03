@@ -41,10 +41,13 @@ ol {
 .content {
   padding-left: 30px;
   padding-right: 30px;
+
   display: flex;
   gap: 30px;
   align-items: end;
   margin: auto;
+
+  min-height: 534px;
 }
 .result {
   display: flex;
@@ -53,7 +56,7 @@ ol {
 }
 
 .result__video-container {
-  
+  margin-top: 71px;
   position: relative;
   padding-bottom: 16px;
   
@@ -65,7 +68,13 @@ ol {
 }
 
 .content__details {
-  min-width: 399px;
+  display: grid;
+  grid-template-rows: 210px 298px;
+  min-width:415px ;
+  gap:26px;
+
+  
+
 }
 .content__list {
   position: relative;
@@ -75,14 +84,14 @@ ol {
 }
 .content__video-card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  
+  grid-template-columns: 200px auto;
+  justify-content: space-between;
 }
 .content__video-card-thumbnail {
-  width: 100%;
+  width: 194px;
   height: 103px;
   object-fit: cover;
-  object-position:center;
+  
 }
 
 
@@ -96,10 +105,10 @@ ol {
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
-  padding-bottom: 26px;
 }
 .content__accent {
   color: #545050;
+
 }
 .content__card-link {
   display: block;
@@ -115,7 +124,7 @@ ol {
   text-decoration: underline;
 }
 .content__card-link:focus{
-  border: none;
+  outline: none;
 }
 .content__card-link:focus-visible{
   border: 1px solid #fff;
@@ -126,9 +135,6 @@ ol {
   line-height: 100%; /* 30px */
   text-transform: uppercase;
   padding-bottom: 6px;
-  padding-top: 8px;
-  padding-left: 2px;
-  
 }
 .content__video-card-description {
   font-size: 18px;
@@ -151,6 +157,7 @@ ol {
   grid-template-columns: auto auto auto;
   min-width: fit-content;
   gap:40px
+
 }
 
 .search-form__fieldset {
@@ -175,7 +182,7 @@ ol {
   font-family: inherit;
   color: inherit;
   font-size: inherit;
-  width: 225px;
+  width: 220px;
   appearance: none;
 }
 .search-form__textfield:focus{
@@ -183,7 +190,7 @@ ol {
 }
   .search-form__checkbox-list {
   display: flex;
-  gap: 15px;
+  gap: 21px;
 }
 
 .search-form__label .search-form__pseudo-checkbox {
@@ -248,4 +255,12 @@ ol {
   min-width: 100%;
   height: 34px;
 }
-/*что то не то*/
+.error-template{
+  display: flex;
+  padding-left: 200px;
+}
+.error{
+  height: 386px;
+  
+}
+/*Не понимаю как чекбоксы на место поставить*/
